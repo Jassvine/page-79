@@ -1,0 +1,25 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+void swap(double, double);
+
+int main() //display ori and call function swap
+{
+	double x, y;
+	x = 5.5;
+	y = 10.6;
+	cout << "the original value of x is " << x << " and y is " << y << endl;
+
+	//function call
+	swap(x, y);
+
+	return 0;
+}
+void swap(double x, double y)
+{
+	double swap = x;
+	x = y;
+	y = swap;
+
+	cout << "the swapped values of x is " << x << " and the swapped value of y is " << y << endl;
+}
